@@ -291,14 +291,14 @@ public class PictureFrame extends JFrame {
         this.setAlwaysOnTop(true);
         //取消窗体默认布局
         this.setLayout(null);
-        try {
-            //播放音乐, 有异常, 使用快捷键第二个解决方案
-            new Music();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+//        try {
+//            //播放音乐, 有异常, 使用快捷键第二个解决方案
+//            new Music();
+//        } catch (FileNotFoundException e) {
+//            e.printStackTrace();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
     }
 
     //打乱二维数组元素(打乱图片)
