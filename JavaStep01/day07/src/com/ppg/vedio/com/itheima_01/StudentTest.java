@@ -5,7 +5,7 @@ package com.ppg.vedio.com.itheima_01;
 //import com.itheima_01.Student;
 //Alt+Enter 快捷键导包
 
-import com.itheima_01.Student;
+import com.ppg.vedio.com.itheima_01.Student;
 
 public class StudentTest {
     public static void main(String[] args) {
