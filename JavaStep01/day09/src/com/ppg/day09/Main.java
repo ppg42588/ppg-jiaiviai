@@ -2,6 +2,6 @@ package com.ppg.day09;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(1);
+        PictureFrame pictureFrame = new PictureFrame();
     }
 }
