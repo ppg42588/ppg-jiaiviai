@@ -169,17 +169,23 @@ public class PictureFrame extends JFrame {
         Random random = new Random();
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
+                System.out.println(indexY0+" "+indexX0);
                 int indexX = random.nextInt(arr[i].length);
                 int indexY = random.nextInt(arr.length);
                 int temp = arr[i][j];
                 arr[i][j] = arr[indexY][indexX];
                 arr[indexY][indexX] = temp;
-                if (arr[i][j] == 0) {
-                    indexX0 = j;
-                    indexY0 = i;
+            }
+        }
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                if(arr[i][j]==0){
+                    indexY0=i;
+                    indexX0=j;
                 }
             }
         }
+
         return arr;
     }
 
@@ -198,6 +204,7 @@ public class PictureFrame extends JFrame {
         if (num == 15) {
             JOptionPane.showMessageDialog(this, "挑战成功");
             imageArr[3][3] = 16;
+            jLabels[3][3].setIcon(new ImageIcon("day09\\src\\com\\ppg\\images\\" + imageArr[3][3] + ".png"));
         }
         return jLabels;
     }
