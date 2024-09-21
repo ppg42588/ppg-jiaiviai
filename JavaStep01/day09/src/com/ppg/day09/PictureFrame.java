@@ -169,7 +169,6 @@ public class PictureFrame extends JFrame {
         Random random = new Random();
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
-                System.out.println(indexY0+" "+indexX0);
                 int indexX = random.nextInt(arr[i].length);
                 int indexY = random.nextInt(arr.length);
                 int temp = arr[i][j];
