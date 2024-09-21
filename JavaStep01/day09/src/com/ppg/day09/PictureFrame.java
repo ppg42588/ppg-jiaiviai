@@ -201,7 +201,7 @@ public class PictureFrame extends JFrame {
                 if (imageArr[i][j] == i * 4 + j + 1) num++;
             }
         }
-        if (num == 15) {
+        if (num >= 15) {
             JOptionPane.showMessageDialog(this, "挑战成功");
             imageArr[3][3] = 16;
             jLabels[3][3].setIcon(new ImageIcon("day09\\src\\com\\ppg\\images\\" + imageArr[3][3] + ".png"));
